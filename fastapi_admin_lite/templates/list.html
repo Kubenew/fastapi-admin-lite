@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ title }} - {{ model_name }}</title>
+    <style>
+        body { font-family: Arial; margin: 30px; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { border: 1px solid #ddd; padding: 10px; }
+        th { background: #f2f2f2; }
+        a { text-decoration: none; }
+        .btn { padding: 5px 10px; border: 1px solid #444; border-radius: 6px; }
+    </style>
+</head>
+<body>
+    <h1>{{ title }} - {{ model_name }}</h1>
+    <a class="btn" href="{{ prefix }}">Back</a>
+
+    <table>
+        <thead>
+            <tr>
+                {% for col in cols %}
+                    <th>{{ col }}</th>
+                {% endfor %}
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in items %}
+                <tr>
+                    {% for col in cols %}
+                        <td>{{ getattr(item, col) }}</td>
+                    {% endfor %}
+                    <td>
+                        <a class="btn" href="{{ prefix }}/{{ model_name }}/delete/{{ item.id }}">Delete</a>
+                    </td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
