@@ -1,5 +1,10 @@
 # fastapi-admin-lite
 
+[![PyPI Version](https://img.shields.io/pypi/v/fastapi-admin-lite)](https://pypi.org/project/fastapi-admin-lite/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/fastapi-admin-lite)](https://pypi.org/project/fastapi-admin-lite/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Tests](https://github.com/Kubenew/fastapi-admin-lite/actions/workflows/ci.yml/badge.svg)](https://github.com/Kubenew/fastapi-admin-lite/actions/workflows/ci.yml)
+
 `fastapi-admin-lite` provides a minimal auto-generated admin panel for FastAPI + SQLAlchemy.
 
 ## Features (v0.1.0)

@@ -1,0 +1,19 @@
+site_name: fastapi-admin-lite
+site_description: Auto-generated admin panel for FastAPI
+site_url: https://Kubenew.github.io/fastapi-admin-lite
+repo_name: Kubenew/fastapi-admin-lite
+repo_url: https://github.com/Kubenew/fastapi-admin-lite
+
+theme:
+  name: material
+  palette:
+    primary: teal
+    accent: light teal
+
+nav:
+  - Home: index.md
+  - Installation: installation.md
+  - Usage: usage.md
+
+plugins:
+  - search
